@@ -138,6 +138,13 @@ do
             if (ourAnimals[i, 0] != "ID #: ") {
                 petCount += 1;
             }
+
+            if (petCount < maxPets) {
+                Console.WriteLine($"We currently have {petCount} pets that need homes.  We can manage {(maxPets - petCount)} more.");
+            }
+
+            Console.WriteLine(petCount);
+
            }
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
