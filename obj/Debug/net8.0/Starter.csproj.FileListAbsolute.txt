@@ -1,0 +1,14 @@
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\bin\Debug\net8.0\Starter.exe
+C:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\bin\Debug\net8.0\Starter.deps.json
+C:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\bin\Debug\net8.0\Starter.runtimeconfig.json
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\bin\Debug\net8.0\Starter.dll
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\bin\Debug\net8.0\Starter.pdb
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.AssemblyInfoInputs.cache
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.AssemblyInfo.cs
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.csproj.CoreCompileInputs.cache
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.dll
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\refint\Starter.dll
+c:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.pdb
+C:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\Starter.genruntimeconfig.cache
+C:\Users\Codyburk7\repos\C#\CsharpProjects\Pet_Starter\obj\Debug\net8.0\ref\Starter.dll
