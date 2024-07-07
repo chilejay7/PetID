@@ -1,11 +1,3 @@
-// the ourAnimals array will store the following: 
-// string animalSpecies = "";
-// string animalID = "";
-// string animalAge = "";
-// string animalPhysicalDescription = "";
-// string animalPersonalityDescription = "";
-// string animalNickname = "";
-
 string? animalSpecies;
 string? animalID;
 string? animalAge;
