@@ -147,6 +147,27 @@ do
             {
                 bool validEntry = false;
 
+                // get the pet's age. can be ? at initial entry. 
+                do
+                {
+
+                    int petAge;
+
+                    Console.WriteLine("Enter the pet's age or enter ? if unkown.");
+                    readResult = Console.ReadLine();
+
+                    if (readResult != null) {
+                        animalAge = readResult;
+                    }
+
+                    if (animalAge != "?") {
+                        validEntry = int.TryParse(animalAge, out petAge);
+                    } else {
+                        validEntry = true;
+                    }
+
+                } while (validEntry == false);
+
                 // get species (cat or dog) - string animalSpecies is a required field 
                 do
                 {
@@ -162,7 +183,7 @@ do
                             validEntry = false;
 
                         }  else {
-                            
+
                             validEntry = true;
                         }
                         
