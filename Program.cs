@@ -152,9 +152,12 @@ do
 
             while (anotherPet == "y" && petCount < maxPets)
             {
+                // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
+                petCount = petCount + 1;
+
                 if (petCount < maxPets)
                 {
-                    Console.WriteLine("Do you want to enter infor for another pet (y/n)?");
+                    Console.WriteLine("Do you want to enter information for another pet (y/n)?");
 
                     do
                     {
