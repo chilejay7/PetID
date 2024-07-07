@@ -114,15 +114,18 @@ do
     switch (menuSelection)
     {
         case "1":
-            for (int i = 0; i < maxPets; i++) {
-                if (ourAnimals[i, 0] != "ID #: ") {
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
                     Console.WriteLine(ourAnimals[i, 0]);
 
-                    for (int j = 1; j < 6; j++) {
+                    for (int j = 1; j < 6; j++)
+                    {
                         Console.WriteLine(ourAnimals[i, j]);
                     }
 
-                Console.Write("\n");
+                    Console.Write("\n");
 
                 }
             }
@@ -131,22 +134,24 @@ do
             break;
 
         case "2":
-           string anotherPet = "y";
-           int petCount = 0;
+            string anotherPet = "y";
+            int petCount = 0;
 
-           for (int i = 0; i < maxPets; i++) {
-            if (ourAnimals[i, 0] != "ID #: ") {
-                petCount += 1;
+            for (int i = 0; i < maxPets; i++)
+            {
+                if (ourAnimals[i, 0] != "ID #: ")
+                {
+                    petCount += 1;
+                }
             }
 
-            if (petCount < maxPets) {
+            if (petCount < maxPets)
+            {
                 Console.WriteLine($"We currently have {petCount} pets that need homes.  We can manage {(maxPets - petCount)} more.");
             }
 
-            Console.WriteLine(petCount);
-
-           }
             Console.WriteLine("Press the Enter key to continue.");
+
             readResult = Console.ReadLine();
             break;
 
