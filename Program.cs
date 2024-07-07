@@ -156,14 +156,18 @@ do
                     Console.WriteLine("Enter the pet's age or enter ? if unkown.");
                     readResult = Console.ReadLine();
 
-                    if (readResult != null) {
+                    if (readResult != null)
+                    {
                         animalAge = readResult;
-                    }
 
-                    if (animalAge != "?") {
-                        validEntry = int.TryParse(animalAge, out petAge);
-                    } else {
-                        validEntry = true;
+                        if (animalAge != "?")
+                        {
+                            validEntry = int.TryParse(animalAge, out petAge);
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
                     }
 
                 } while (validEntry == false);
@@ -175,18 +179,21 @@ do
                     Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry.");
                     readResult = Console.ReadLine();
 
-                    if (readResult != null) {
+                    if (readResult != null)
+                    {
                         animalSpecies = readResult.ToLower().Trim();
 
                         if (animalSpecies != "dog" && animalSpecies != "cat")
                         {
                             validEntry = false;
 
-                        }  else {
+                        }
+                        else
+                        {
 
                             validEntry = true;
                         }
-                        
+
                     }
 
                 } while (validEntry == false);
