@@ -95,7 +95,7 @@ do
     Console.WriteLine("Enter your selection number (or type Exit to exit the program)");
 
     readResult = Console.ReadLine();
-    
+
     if (readResult != null)
     {
         menuSelection = readResult.ToLower().Trim();
@@ -156,6 +156,16 @@ do
 
                     if (readResult != null) {
                         animalSpecies = readResult.ToLower().Trim();
+
+                        if (animalSpecies != "dog" && animalSpecies != "cat")
+                        {
+                            validEntry = false;
+
+                        }  else {
+                            
+                            validEntry = true;
+                        }
+                        
                     }
 
                 } while (validEntry == false);
