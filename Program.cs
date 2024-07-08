@@ -122,6 +122,7 @@ do
 
                 }
             }
+
             Console.WriteLine("Press the Enter key to continue.");
             readResult = Console.ReadLine();
             break;
@@ -157,6 +158,7 @@ do
                     if (readResult != null)
                     {
                         animalSpecies = readResult.ToLower().Trim();
+                        Console.WriteLine($"The animal entered is a {animalSpecies}.");
 
                         if (animalSpecies != "dog" && animalSpecies != "cat")
                         {
@@ -168,15 +170,13 @@ do
 
                             validEntry = true;
                         }
-
                     }
 
                 } while (validEntry == false);
 
-                // get the pet's age. can be ? at initial entry. 
+                // get the pet's age. can be ? at initial entry.
                 do
                 {
-
                     int petAge;
 
                     Console.WriteLine("Enter the pet's age or enter ? if unkown.");
@@ -188,7 +188,8 @@ do
 
                         if (animalAge != "?")
                         {
-                            validEntry = int.TryParse(animalAge, out petAge);
+                            animalAge = int.TryParse(animalAge, out petAge);
+                            Console.WriteLine($"The age you entered was: {petAge}.");
                         }
                         else
                         {
@@ -207,6 +208,7 @@ do
                     if (readResult != null) {
                         
                         animalPhysicalDescription = readResult.ToLower().Trim();
+                        Console.WriteLine($"The description is: {animalPhysicalDescription}.");
 
                         if (animalPhysicalDescription == "") {
 
@@ -226,6 +228,7 @@ do
                     if (readResult != null) {
 
                         animalPersonalityDescription = readResult.ToLower().Trim();
+                        Console.WriteLine($"The pet's personality is: {animalPersonalityDescription}.");
 
                         if (animalPersonalityDescription == "") {
                             
@@ -246,6 +249,7 @@ do
                     if (readResult != null) {
 
                         animalNickname = readResult.ToLower().Trim();
+                        Console.WriteLine($"The animal's nickname is: {animalNickname}.");
 
                         if (animalNickname == "") {
 
@@ -275,7 +279,7 @@ do
                         readResult = Console.ReadLine();
                         if (readResult != null)
                         {
-                            anotherPet = readResult.ToLower();
+                            anotherPet = readResult.ToLower().Trim();
                         }
                     } while (anotherPet != "y" && anotherPet != "n");
                     
