@@ -172,6 +172,14 @@ do
 
                 } while (validEntry == false);
 
+                // get a description of the pet's physical appearance/condition - animalPhysicalDescription can be blank.
+                do {
+
+                    Console.WriteLine("Enter a physical description of the pet (size, color, gender, weight, housebroken)");
+                    readResult = Console.ReadLine();
+
+                } while (animalPhysicalDescription = "");
+
                 // get species (cat or dog) - string animalSpecies is a required field 
                 do
                 {
