@@ -188,7 +188,7 @@ do
 
                         if (animalAge != "?")
                         {
-                            animalAge = int.TryParse(animalAge, out petAge);
+                            validEntry = int.TryParse(animalAge, out petAge);
                             Console.WriteLine($"The age you entered was: {petAge}.");
                         }
                     }
@@ -256,15 +256,17 @@ do
 
                 } while (animalNickname == "");
 
+                // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
+                petCount = petCount + 1;
+
+                Console.WriteLine($"After adding the current pet's information, the pet count is {petCount}.");
+
                 ourAnimals[petCount, 0] = $"ID #: {animalID}";
                 ourAnimals[petCount, 1] = $"Species: {animalSpecies}";
                 ourAnimals[petCount, 2] = $"Age: {animalAge}";
                 ourAnimals[petCount, 3] = $"Nickname: {animalNickname}";
                 ourAnimals[petCount, 4] = $"Physical description: {animalPhysicalDescription}";
                 ourAnimals[petCount, 5] = $"Personality: {animalPersonalityDescription}";
-
-                // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
-                petCount = petCount + 1;
 
                 if (petCount < maxPets)
                 {
