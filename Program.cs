@@ -191,13 +191,9 @@ do
                             animalAge = int.TryParse(animalAge, out petAge);
                             Console.WriteLine($"The age you entered was: {petAge}.");
                         }
-                        else
-                        {
-                            validEntry = true;
-                        }
                     }
 
-                } while (validEntry == false);
+                } while (animalAge == "");
 
                 // get a description of the pet's physical appearance/condition - animalPhysicalDescription can be blank.
                 do {
