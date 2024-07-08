@@ -1,9 +1,9 @@
-string? animalSpecies;
-string? animalID;
-string? animalAge;
-string? animalPhysicalDescription;
-string? animalPersonalityDescription;
-string? animalNickname;
+string animalSpecies = "";
+string animalID = "";
+string animalAge = "";
+string animalPhysicalDescription = ""; 
+string animalPersonalityDescription = "";
+string animalNickname = "";
 
 // variables that support data entry
 int maxPets = 8;
@@ -220,7 +220,7 @@ do
                 // get a description of the pet's personality - animalPersonalityDescription can be blank.
                 do {
 
-                    Console.WriteLine ("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)")
+                    Console.WriteLine ("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)");
                     readResult = Console.ReadLine();
 
                     if (readResult != null) {
