@@ -178,7 +178,37 @@ do
                     Console.WriteLine("Enter a physical description of the pet (size, color, gender, weight, housebroken)");
                     readResult = Console.ReadLine();
 
+                    if (readResult != null) {
+                        
+                        animalPhysicalDescription = readResult.ToLower().Trim();
+
+                        if (animalPhysicalDescription = "") {
+
+                            animalPhysicalDescription = "tbd";
+                        }
+
+                    }
+
                 } while (animalPhysicalDescription = "");
+
+                // get a description of the pet's personality - animalPersonalityDescription can be blank.
+                do {
+
+                    Console.WriteLine ("Enter a description of the pet's personality (likes or dislikes, tricks, energy level)")
+                    readResult = Console.ReadLine();
+
+                    if (readResult != null) {
+
+                        animalPersonalityDescription = readResult.ToLower().Trim();
+
+                        if (animalPersonalityDescription = "") {
+                            
+                            animalPersonalityDescription = "";
+                            
+                        }
+                    }
+
+                } while (animalPersonalityDescription = "");
 
                 // get species (cat or dog) - string animalSpecies is a required field 
                 do
