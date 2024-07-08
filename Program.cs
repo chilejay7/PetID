@@ -147,6 +147,32 @@ do
             {
                 bool validEntry = false;
 
+                // get species (cat or dog) - string animalSpecies is a required field 
+                do
+                {
+
+                    Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry.");
+                    readResult = Console.ReadLine();
+
+                    if (readResult != null)
+                    {
+                        animalSpecies = readResult.ToLower().Trim();
+
+                        if (animalSpecies != "dog" && animalSpecies != "cat")
+                        {
+                            validEntry = false;
+
+                        }
+                        else
+                        {
+
+                            validEntry = true;
+                        }
+
+                    }
+
+                } while (validEntry == false);
+
                 // get the pet's age. can be ? at initial entry. 
                 do
                 {
@@ -182,14 +208,14 @@ do
                         
                         animalPhysicalDescription = readResult.ToLower().Trim();
 
-                        if (animalPhysicalDescription = "") {
+                        if (animalPhysicalDescription == "") {
 
                             animalPhysicalDescription = "tbd";
                         }
 
                     }
 
-                } while (animalPhysicalDescription = "");
+                } while (animalPhysicalDescription == "");
 
                 // get a description of the pet's personality - animalPersonalityDescription can be blank.
                 do {
@@ -201,40 +227,34 @@ do
 
                         animalPersonalityDescription = readResult.ToLower().Trim();
 
-                        if (animalPersonalityDescription = "") {
+                        if (animalPersonalityDescription == "") {
                             
                             animalPersonalityDescription = "";
-                            
+
                         }
                     }
 
-                } while (animalPersonalityDescription = "");
+                } while (animalPersonalityDescription == "");
 
-                // get species (cat or dog) - string animalSpecies is a required field 
-                do
-                {
 
-                    Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry.");
+                // get the pet's nickname. animalNickname can be blank.
+                do {
+
+                    Console.WriteLine("Enter a nickname for the pet.");
                     readResult = Console.ReadLine();
 
-                    if (readResult != null)
-                    {
-                        animalSpecies = readResult.ToLower().Trim();
+                    if (readResult != null) {
 
-                        if (animalSpecies != "dog" && animalSpecies != "cat")
-                        {
-                            validEntry = false;
+                        animalNickname = readResult.ToLower().Trim();
+
+                        if (animalNickname == "") {
+
+                            animalNickname = "tbd";
 
                         }
-                        else
-                        {
-
-                            validEntry = true;
-                        }
-
                     }
 
-                } while (validEntry == false);
+                } while (animalNickname == "");
 
                 // increment petCount (the array is zero-based, so we increment the counter after adding to the array)
                 petCount = petCount + 1;
@@ -250,8 +270,8 @@ do
                         {
                             anotherPet = readResult.ToLower();
                         }
-                    }
-                    while (anotherPet != "y" && anotherPet != "n");
+                    } while (anotherPet != "y" && anotherPet != "n");
+                    
                 }
             }
 
